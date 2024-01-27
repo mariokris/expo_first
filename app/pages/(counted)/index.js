@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { increment, decrement, incrementByAmount } from '../redux/counterReducer';
+import { increment, decrement, incrementByAmount } from '../../redux/counterReducer';
 
 export default function Counted() {
   const dispatch = useDispatch();
