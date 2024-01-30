@@ -6,9 +6,8 @@ const TabsLayout = () => {
             headerTitle: 'Homepage',
             title: 'Home',
         }}/>
-        <Tabs.Screen name="users/[id]" options={{
-            headerTitle: 'User Page',
-            title: 'User',
+        <Tabs.Screen name="users" options={{
+            headerShown: false,
         }}/>
     </Tabs>
 };
