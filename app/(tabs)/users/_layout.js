@@ -23,7 +23,6 @@ export default function Layout() {
             headertitle:"Jupiter Page",
             title:"Jupiter",
         }}
-        
       />
     </Stack>
   );
