@@ -8,19 +8,12 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "eslint .",
-    "prepare": "husky"
+    "precommit": "npm run lint"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run precommit"
     }
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --config .prettierrc --write",
-      "eslint --fix",
-      "git add"
-    ]
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
@@ -44,7 +37,6 @@
     "eslint": "^8.56.0",
     "eslint-config-universe": "^12.0.0",
     "husky": "^9.0.7",
-    "lint-staged": "^15.2.1",
     "prettier": "^3.2.4"
   },
   "private": true
