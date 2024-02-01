@@ -11,6 +11,6 @@ export default function User() {
             <TouchableOpacity>
                 <Text>Welome to Jupiter</Text>
             </TouchableOpacity>
-        </View
+        </View>
     );
 }
